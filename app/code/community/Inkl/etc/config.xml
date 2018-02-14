@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Inkl_IdnMail>
+            <version>0.1.0</version>
+        </Inkl_IdnMail>
+    </modules>
+
+    <global>
+        <models>
+            <inkl_idnmail>
+                <class>Inkl_IdnMail_Model</class>
+            </inkl_idnmail>
+        </models>
+
+        <events>
+            <sales_order_save_before>
+                <observers>
+                    <inkl_idnmail>
+                        <type>singleton</type>
+                        <class>inkl_idnmail/observer</class>
+                        <method>sales_order_save_before</method>
+                    </inkl_idnmail>
+                </observers>
+            </sales_order_save_before>
+        </events>
+    </global>
+
+</config>

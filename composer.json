@@ -1,0 +1,26 @@
+{
+	"name": "inkl/m1-idnmail",
+	"type": "magento-module",
+	"authors": [
+		{
+			"name": "Marcus Venghaus",
+			"email": "info@inklammern.de"
+		}
+	],
+	"require": {
+		"magento-hackathon/magento-composer-installer": "*",
+		"mso/idna-convert" : "1.*"
+	},
+	"extra": {
+		"map": [
+			[
+				"app/code/community/Inkl/IdnMail",
+				"app/code/community/Inkl/IdnMail"
+			],
+			[
+				"app/etc/modules/Inkl_IdnMail.xml",
+				"app/etc/modules/Inkl_IdnMail.xml"
+			]
+		]
+	}
+}
